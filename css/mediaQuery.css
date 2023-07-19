@@ -1,0 +1,71 @@
+@media (max-width: 767px) {
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-nav {
+        margin-right: 0;
+    }
+    /* .navbar-toggler {
+        margin-right: -35px;
+    } */
+    .linea {
+        display: none;
+    }
+    .big-nav {
+        display: none;
+    }
+    .small-nav {
+        display: block !important;
+    }
+    .big-carousel {
+        display: none;
+    }
+    .small-carousel {
+        display: block !important;
+    }
+    .big-reensioni {
+        display: none;
+    }
+    .small-reensioni {
+        display: block !important;
+    }
+}
+
+
+@media (max-width: 576px) {
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-nav {
+        margin-right: 0;
+    }
+    .linea {
+        display: none;
+    }
+    .big-nav {
+        display: none;
+    }
+    .small-nav {
+        display: block !important;
+    }
+    .big-carousel {
+        display: none;
+    }
+    .small-carousel {
+        display: block !important;
+    }
+    .big-reensioni {
+        display: none;
+    }
+    .small-reensioni {
+        display: block !important;
+    }
+}

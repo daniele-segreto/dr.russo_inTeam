@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* SELETTORE UNIVERSALE E BODY */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+/* NAVBAR */
+nav {
+    background-color: #ffff;
+}
+.nav-link {
+    color: #232340;
+}
+.navbar-brand {
+    margin-left: 35px;
+}
+.navbar-nav {
+    margin-right: 35px;
+}
+
+
+/* MAIN */
+
+/* SECTION 1 */
+main {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* LINEA */
+.linea {
+    position: relative;
+    top: 50%;
+    left: -12px;
+    width: 101%;
+    height: 2px;
+    background-color: black;
+}
+
+/* COLONNA DI DESTRA */
+.jumbotron-sinistra {
+    background-color: #232340;;
+}
+
+/* COLONNA DI SINISTRA */
+.jumbotron-destra {
+    /* nessun parametro */
+}
+
+/* DATI ALL'INTERNO DEL JUMBOTRON */
+.dr-russo {
+    color: #CDA434;
+    font-size: 36px;
+}
+.descrizione {
+    color: #F5F5F5;
+    font-size: 24px;
+}
+button {
+    color: #F5F5F5;
+    background-color: #C9205B;
+    margin-top: 100px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+
+/* SECTION 2 */
+.h2-1 {
+    color: #C9205B;
+    font-size: 36px; 
+}
+p, .ul-p {
+    font-size: 18px;
+}
+
+
+/* SECTION 3 */
+
+/* CAROSELLO */
+.h2-2 {
+    color: #CDA434;
+    font-size: 36px; 
+}
+.carrouse-container {
+    background-color: #232340;
+}
+/* Stile per centrare i bottoni al centro delle immagini */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.read-more-btn {
+    position: absolute;
+    bottom: 30px; /* Regola questa proprietà per posizionare il pulsante verticalmente rispetto all'immagine */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C9205B;;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* CAROSELLO RECENSIONI */
+#carousel2 {
+    height: 600px;
+    padding: 40px;
+}
+.singola-card-recensioni {
+    padding: 40px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px;
+    height: 600px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #232340;
+    color: #F5F5F5;
+}
+.footer-bottom {
+    margin-top: 170px;
+}
+.margin-tel-iva-copyright {
+    margin-left: 25px;
+}
+.tel-iva {
+    color: #C9205B;
+}
+.copyright {
+    margin-top: -20px;
+}

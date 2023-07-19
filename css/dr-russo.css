@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* SELETTORE UNIVERSALE E BODY */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+/* NAVBAR */
+nav {
+    background-color: #ffff;
+}
+.nav-link {
+    color: #232340;
+}
+.navbar-brand {
+    margin-left: 35px;
+}
+.navbar-nav {
+    margin-right: 35px;
+}
+
+
+/* MAIN */
+
+/* SECTION 1 */
+main {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* LINEA */
+.linea {
+    position: relative;
+    top: 50%;
+    left: -12px;
+    width: 101%;
+    height: 2px;
+    background-color: black;
+}
+
+
+/* SECTION */
+.sinistra {
+    margin-left: -10px;
+}
+.destra {
+    margin-right: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #232340;
+    color: #F5F5F5;
+}
+.footer-bottom {
+    margin-top: 170px;
+}
+.margin-tel-iva-copyright {
+    margin-left: 25px;
+}
+.tel-iva {
+    color: #C9205B;
+}
+.copyright {
+    margin-top: -20px;
+}
