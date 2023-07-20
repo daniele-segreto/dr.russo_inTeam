@@ -51,6 +51,19 @@
     .small-prenotazione {
         display: block !important;
     }
+    .big-dr-russo {
+        display: none;
+    }
+    .small-dr-russo {
+        display: block !important;
+    }
+    .big-section-1 {
+        display: none;
+    }
+    .small-section-1 {
+        display: block !important;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -103,4 +116,22 @@
     .small-prenotazione {
         display: block !important;
     }
+    .big-dr-russo {
+        display: none;
+    }
+    .small-dr-russo {
+        display: block !important;
+    }
+    .big-section-1 {
+        display: none;
+    }
+    .small-section-1 {
+        display: block !important;
+        margin-left: 1px;
+    }
 }
+
+/* Rimuove la sottolineatura degli elementi durante lo scorrimento */
+/* * {
+    text-decoration: none !important;
+} */

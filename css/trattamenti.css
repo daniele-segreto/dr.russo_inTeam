@@ -10,9 +10,17 @@ body {
 }
 
 /* MAIN */
-
-/* SECTION 1 */
 main {
     margin-left: 80px;
     margin-right: 80px;
+}
+
+/* LINEA */
+.linea {
+    position: relative;
+    top: 50%;
+    left: -12px;
+    width: 101%;
+    height: 2px;
+    background-color: black;
 }

@@ -10,8 +10,6 @@ body {
 }
 
 /* MAIN */
-
-/* SECTION 1 */
 main {
     margin-left: 80px;
     margin-right: 80px;
@@ -103,10 +101,11 @@ p, .ul-p {
 .singola-card-recensioni {
     width: 30%;
     padding: 40px;
-    border: 1px solid gray;
-    box-shadow: 2px 2px 5px;
+    border: 1px solid gray; /* Aggiungiamo un'ombra trasparente al bordo */;
+    /* border: 1px solid gray rgba(128, 128, 128, 1228, 0.3); Aggiungiamo un'ombra trasparente al bordo */;
+    box-shadow: 2px 2px 3px;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: 20px;
 }
 .singola-card-recensioni h5, .singola-card-recensioni p {

@@ -29,8 +29,8 @@
     <main>
         <div class="linea"></div>
         
-        <!-- SECTION 1 -->
-        <section class="mb-5">
+        <!-- SECTION 1 PER SCHERMI GRANDI -->
+        <section class="mb-5 big-section-1">
             <div class="row">
                 <!-- Jumbotron -->
                 <div class="col-md-8 jumbotron-sinistra p-0"> <!-- Imposto il padding a 0 -->
@@ -49,6 +49,26 @@
                 </div>
             </div>
         </section>
+        
+        <!-- SECTION 1 PER SCHERMI PICCOLO -->
+        <section class="mb-5 d-none small-section-1">
+            <!-- Jumbotron -->
+            <div class="jumbotron-sinistra p-0 me-0"> <!-- Imposto il padding a 0 -->
+                <div class="jumbotron m-0 p-5 me-0"> <!-- Imposto il margine a 0 -->
+                    <h1 class="display-4 dr-russo">Dr. Christian Russo</h1>
+                    <p class="lead descrizione">Breve descrizione</p>
+                    <hr class="my-4">
+                    <p class="lead">
+                        <button type="button" class="border border-0 px-4 py-1"><a href="./dr.russo.html">Leggi di più</a></button>
+                    </p>
+                </div>
+            </div>
+            <!-- Foto -->
+            <div class="jumbotron-destra p-0"> <!-- Imposto il padding a 0 -->
+                <img src="./img/Rectangle 2.png" alt="" width="100%" height="400">
+            </div>
+        </section>
+        
         
         <!-- SECTION 2 -->
         <section class="mt-5 p-5">
@@ -304,14 +324,14 @@
         <div class="prenota-consulenza mb-5">
             
             <!-- Button trigger modal per schermi grandi -->
-            <button type="button" class="btn bottone-consulenza big-prenotazione" data-bs-toggle="modal" data-bs-target="#Modal">
-                Prenota ora una consulenza
+            <button type="button" class="btn bottone-consulenza big-prenotazione px-5" data-bs-toggle="modal" data-bs-target="#Modal">
+                Prenota ora<br> una consulenza
             </button>
             
             <!-- Button trigger modal per schermi piccoli -->
             <div class="d-flex justify-content-center d-none margine-bottone-small">
                 <button type="button" class="small-prenotazione px-4 py-2 border border-0" data-bs-toggle="modal" data-bs-target="#Modal">
-                    Prenota ora una consulenzass
+                    Prenota ora<br> una consulenza
                 </button>
             </div>
             
