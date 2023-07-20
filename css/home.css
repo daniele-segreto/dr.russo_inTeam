@@ -9,22 +9,6 @@ body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-
-/* NAVBAR */
-nav {
-    background-color: #ffff;
-}
-.nav-link {
-    color: #232340;
-}
-.navbar-brand {
-    margin-left: 35px;
-}
-.navbar-nav {
-    margin-right: 35px;
-}
-
-
 /* MAIN */
 
 /* SECTION 1 */
@@ -50,7 +34,7 @@ main {
 
 /* COLONNA DI SINISTRA */
 .jumbotron-destra {
-    /* nessun parametro */
+    margin-left: -10px;
 }
 
 /* DATI ALL'INTERNO DEL JUMBOTRON */
@@ -73,7 +57,6 @@ a {
     color: #F5F5F5;
 }
 
-
 /* SECTION 2 */
 .h2-1 {
     color: #C9205B;
@@ -82,7 +65,6 @@ a {
 p, .ul-p {
     font-size: 18px;
 }
-
 
 /* SECTION 3 */
 
@@ -113,34 +95,74 @@ p, .ul-p {
     z-index: 1;
 }
 
-
 /* CAROSELLO RECENSIONI */
 #carousel2 {
     height: 600px;
     padding: 40px;
 }
 .singola-card-recensioni {
+    width: 30%;
     padding: 40px;
     border: 1px solid gray;
     box-shadow: 2px 2px 5px;
     height: 600px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.singola-card-recensioni h5, .singola-card-recensioni p {
+    color: #232340;
+}
+.recensioni-prev-icon, .recensioni-next-icon {
+    margin-top: 250px; 
+}
+.recensioni-next-icon {
+    margin-right: 100px; 
+}
+.sezione-form-recensioni {
+    margin-top: 3000px;
+}
+.bottone-recensioni {
+    margin-top: 20px;
+    border: 0;
+    padding: 10px 30px;
+}
+::placeholder {
+    color:#232340;
+}
+input[type="text"],
+textarea {
+    border: 1px solid #232340;
+    border-radius: 5px;
+    padding: 5px;
+}
+.freccia-recensioni-destra-small {
+    margin-top: -250px;
+    margin-left: -10px;
+}
+.freccia-recensioni-sinistra-small {
+    margin-top: -250px;
+    margin-right: -10px;
+}
+.small-recensioni {
+    padding-bottom: -5000px;
 }
 
-
-/* FOOTER */
-footer {
-    background-color: #232340;
-    color: #F5F5F5;
+/* TASTO DI PRENOTAZIONE CONSULENZA E MODALE */
+/* Posizionamento del tasto di prenotazione consulenza */
+.prenota-consulenza {
+    position: relative;
+    text-align: right;
+    margin-top: 10px; /* Aggiungi margine superiore per spaziare dal contenuto precedente */
 }
-.footer-bottom {
-    margin-top: 170px;
+/* Stile del tasto di prenotazione consulenza */
+.bottone-consulenza {
+    background-color: #C9205B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.margin-tel-iva-copyright {
-    margin-left: 25px;
-}
-.tel-iva {
-    color: #C9205B;
-}
-.copyright {
-    margin-top: -20px;
+.margine-bottone-small {
+    margin-top: -50px;
 }

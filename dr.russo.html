@@ -13,6 +13,8 @@
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- CSS -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/dr-russo.css">
     <!-- Media Query -->
     <link rel="stylesheet" href="./css/mediaQuery.css">
@@ -20,43 +22,9 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <!-- NAVBAR PER SCHERMI GRANDI -->
-        <nav class="navbar navbar-expand-lg p-4 big-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="#">LOGO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
-                        <a class="nav-link" href="./trattamenti.html">Trattamenti</a>
-                        <a class="nav-link" href="./contatti.html">Contatti</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- NAVBAR PER SCHERMI PICCOLI -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary d-none small-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">LOGO</a>
-                <button class="navbar-toggler mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Trattamenti</a>
-                        <a class="nav-link" href="#">Contatti</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
-    </header>
+    <div w3-include-html="./components/navbar.html"></div>
     
+    <!-- MAIN -->
     <main>
         <div class="linea"></div>
         
@@ -77,39 +45,13 @@
     </main>
     
     <!-- FOOTER -->
-    <footer class="p-5">
-        <div class="row">
-            <div class="col offset-1">
-                LOGO
-            </div>
-            <div class="col offset-1">
-                <p>Home</p>
-                <p>Trattamenti</p>
-                <p>Contatti</p>
-            </div>
-            <div class="col offset-1">
-                <p>FAQ</p>
-                <p>Termini e condizioni</p>
-            </div>
-        </div>
-        
-        <div class="row footer-bottom text-center">
-            <div class="col">
-                
-            </div>
-            <div class="col margin-tel-iva-copyright">
-                <p class="tel-iva">Tel: 010 7352879 &nbsp P.iva 12345678910</p>
-                <p class="copyright">© 2023 Site Bangerz, all rights reserved</p>
-            </div>
-            <div class="col offset-1">
-                
-            </div>
-        </div>
-    </footer>
+    <div w3-include-html="./components/footer.html"></div> 
     
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
+    <!-- Includes W3C -->
+    <script>includeHTML();</script> 
 </body>
 </html>

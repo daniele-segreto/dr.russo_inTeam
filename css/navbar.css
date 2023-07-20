@@ -1,0 +1,13 @@
+/* NAVBAR */
+nav {
+    background-color: #ffff;
+}
+.nav-link {
+    color: #232340;
+}
+.navbar-brand {
+    margin-left: 35px;
+}
+.navbar-nav {
+    margin-right: 35px;
+}

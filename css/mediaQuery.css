@@ -27,14 +27,31 @@
     .small-carousel {
         display: block !important;
     }
-    .big-reensioni {
+    .big-recensioni {
         display: none;
     }
-    .small-reensioni {
+    .small-recensioni {
+        display: block !important;
+    }
+    .big-commenti {
+        display: none;
+    }
+    .small-commenti {
+        display: block !important;
+    }
+    .big-footer {
+        display: none;
+    }
+    .small-footer {
+        display: block !important;
+    }
+    .big-prenotazione {
+        display: none;
+    }
+    .small-prenotazione {
         display: block !important;
     }
 }
-
 
 @media (max-width: 576px) {
     main {
@@ -62,10 +79,28 @@
     .small-carousel {
         display: block !important;
     }
-    .big-reensioni {
+    .big-recensioni {
         display: none;
     }
-    .small-reensioni {
+    .small-recensioni {
+        display: block !important;
+    }
+    .big-commenti {
+        display: none;
+    }
+    .small-commenti {
+        display: block !important;
+    }
+    .big-footer {
+        display: none;
+    }
+    .small-footer {
+        display: block !important;
+    }
+    .big-prenotazione {
+        display: none;
+    }
+    .small-prenotazione {
         display: block !important;
     }
 }

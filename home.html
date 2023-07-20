@@ -14,6 +14,8 @@
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- CSS -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/home.css">
     <!-- Media Query -->
     <link rel="stylesheet" href="./css/mediaQuery.css">
@@ -21,42 +23,7 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <!-- NAVBAR PER SCHERMI GRANDI -->
-        <nav class="navbar navbar-expand-lg p-4 big-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="#">LOGO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
-                        <a class="nav-link" href="./trattamenti.html">Trattamenti</a>
-                        <a class="nav-link" href="./contatti.html">Contatti</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- NAVBAR PER SCHERMI PICCOLI -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary d-none small-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">LOGO</a>
-                <button class="navbar-toggler mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Trattamenti</a>
-                        <a class="nav-link" href="#">Contatti</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
-    </header>
+    <div w3-include-html="./components/navbar.html"></div>
     
     <!-- MAIN -->
     <main>
@@ -78,7 +45,7 @@
                 </div>
                 <!-- Foto -->
                 <div class="col-md-4 jumbotron-destra p-0"> <!-- Imposto il padding a 0 -->
-                    <img src="./img/Rectangle 2.png" alt="" width="451" height="400">
+                    <img src="./img/Rectangle 2.png" alt="" width="100%" height="400">
                 </div>
             </div>
         </section>
@@ -97,12 +64,12 @@
         </section>
         
         <!-- SECTION 3 -->
-        <section class="mt-5 carrouse-container p-5">
+        <section class="mt-5 carrouse-container p-5 big-carousel">
             <h2 class="h2-2">Il panorama della chirurgia estetica</h2>
-            <p>Scopri tutti i trattamenti</p>
+            <p class="text-light">Scopri tutti i trattamenti</p>
             
             <!-- CAROSELLO PER DISPOSITIVI GRANDI -->
-            <div id="carousel" class="carousel slide big-carousel">
+            <div id="carousel" class="carousel slide">
                 <div class="carousel-inner">
                     <!-- SLIDER 1 -->
                     <div class="carousel-item active">
@@ -184,10 +151,13 @@
                 </button>
             </div>
             
-            
-            
-            <!-- CAROSELLO PER DISPOSITIVI PICCOLI -->
-            <div id="carousel" class="carousel slide d-none small-carousel">
+        </section>
+        
+        <!-- CAROSELLO PER DISPOSITIVI PICCOLI -->
+        <section class="mt-5 carrouse-container small-carousel d-none pt-5 xxx">
+            <h2 class="h2-2 text-center">Il panorama della chirurgia estetica</h2>
+            <p class="text-center text-light mt-4">Scopri tutti i trattamenti</p>
+            <div id="carousel2" class="carousel slide d-none small-carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./img/Rectangle 2.png" class="d-block w-100" alt="...">
@@ -199,16 +169,15 @@
                         <img src="./img/Rectangle 2.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <button class="carousel-control-prev freccia-recensioni-destra-small" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <button class="carousel-control-next freccia-recensioni-sinistra-small" type="button" data-bs-target="#carousel2" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
         </section>
         
         <!-- SECTION 4 -->
@@ -218,7 +187,7 @@
         </section>
         
         <!-- CAROSELLO RECENSIONI PER DISPOSITIVI GRANDI -->
-        <div id="carousel2" class="carousel slide big-recensioni mt-5 bg-warning">
+        <div id="carousel3" class="carousel slide big-recensioni mt-5">
             <div class="carousel-inner">
                 <!-- SLIDER 1 -->
                 <div class="carousel-item active">
@@ -249,23 +218,23 @@
                 <!-- SLIDER 2 -->
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 singola-card-recensioni">
                             <div class="d-flex flex-row align-items-center">
-                                <img src="./img/Avatar.png" alt="" width="40px">
+                                <img src="./img/Avatar.png" alt=""width="40px">
                                 <h5 class="mt-2 ms-3">Nickname</h5>
                             </div>
                             <p class="mt-5">Lorem ipsum dolor sit amet consectetur. Diam vel diam nulla adipiscing scelerisque sed venenatis. Pulvinar ac id malesuada nibh dictumst enim nulla ullamcorper elit. Sed dui integer magna adipiscing cras sed. Suspendisse pulvinar consectetur enim tellus non amet eget elementum massa.</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 singola-card-recensioni">
                             <div class="d-flex flex-row align-items-center">
-                                <img src="./img/Avatar.png" alt="" width="40px">
+                                <img src="./img/Avatar.png" alt=""width="40px">
                                 <h5 class="mt-2 ms-3">Nickname</h5>
                             </div>
                             <p class="mt-5">Lorem ipsum dolor sit amet consectetur. Diam vel diam nulla adipiscing scelerisque sed venenatis. Pulvinar ac id malesuada nibh dictumst enim nulla ullamcorper elit. Sed dui integer magna adipiscing cras sed. Suspendisse pulvinar consectetur enim tellus non amet eget elementum massa.</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 singola-card-recensioni">
                             <div class="d-flex flex-row align-items-center">
-                                <img src="./img/Avatar.png" alt="" width="40px">
+                                <img src="./img/Avatar.png" alt=""width="40px">
                                 <h5 class="mt-2 ms-3">Nickname</h5>
                             </div>
                             <p class="mt-5">Lorem ipsum dolor sit amet consectetur. Diam vel diam nulla adipiscing scelerisque sed venenatis. Pulvinar ac id malesuada nibh dictumst enim nulla ullamcorper elit. Sed dui integer magna adipiscing cras sed. Suspendisse pulvinar consectetur enim tellus non amet eget elementum massa.</p>
@@ -273,18 +242,18 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev m-0" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev m-0" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon recensioni-prev-icon bg-warning" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next m-0" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button class="carousel-control-next m-0" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon recensioni-next-icon bg-warning" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
         
         <!-- CAROSELLO RECENSIONI PER DISPOSITIVI PICCOLI -->
-        <div id="carousel" class="carousel slide d-none small-recensioni">
+        <div id="carousel4" class="carousel slide d-none small-recensioni">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./img/Rectangle 2.png" class="d-block w-100" alt="...">
@@ -296,89 +265,91 @@
                     <img src="./img/Rectangle 2.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
         
         <!-- SECTION 6 -->
-        <section class="mt-5 p-5">
+        <!-- COMMENTI PER DISPOSITIVI GRANDI -->
+        <section class="mt-5 p-5 sezione-form-recensioni big-commenti">
             <p>La tua privacy è importante. Lascia un commento in totale anonimato.</p>
-            <div>
-                <div class="form-floating mb-3">
-                    <div class="row">
-                        <div class="col-5 d-flex flex-row mt-4">
-                            <img src="./img/Avatar.png" alt="" wid>
-                            <div>
-                                <input type="text" class="form-control" id="floatingInput" placeholder="Nickname">
-                                <label for="floatingInput"></label>
-                                <textarea class="form-control" placeholder="Comments" id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">Comments</label>
-                            </div>
+            <form>
+                <div class="d-flex flex-row">
+                    <div width="50px">
+                        <img src="./img/Avatar.png" alt="" width="40px">
+                    </div>
+                    <div class="ms-3 mt-1">
+                        <input type="text" id="nickname" name="nickname" placeholder="Nickname"><br>
+                        <label for="name"></label><br>
+                    </div>
+                </div>
+                <textarea type="text" name="message" id="message" cols="100" rows="4" placeholder="Comments"></textarea>
+                <label for="lname"></label><br>
+                <button class="bottone-recensioni">Invia</button>
+            </form>
+        </section>
+        
+        <!-- COMMENTI PER DISPOSITIVI PICCOLI -->
+        <section class="small-commenti">
+            
+        </section>
+        
+        <!-- TASTO DI PRENOTAZIONE CONSULENZA -->
+        <div class="prenota-consulenza mb-5">
+            
+            <!-- Button trigger modal per schermi grandi -->
+            <button type="button" class="btn bottone-consulenza big-prenotazione" data-bs-toggle="modal" data-bs-target="#Modal">
+                Prenota ora una consulenza
+            </button>
+            
+            <!-- Button trigger modal per schermi piccoli -->
+            <div class="d-flex justify-content-center d-none margine-bottone-small">
+                <button type="button" class="small-prenotazione px-4 py-2 border border-0" data-bs-toggle="modal" data-bs-target="#Modal">
+                    Prenota ora una consulenzass
+                </button>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content d-flex justify-content-start">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="ModalLabel">Prenotazione</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Chiamaci oggi stesso per prenotare la tua consulenza e iniziare il tuo percorso verso la bellezza desiderata!
+                            Il nostro team dedicato è pronto ad assisterti e a rispondere a tutte le tue domande.
+                            La tua consulenza personalizzata è solo a una telefonata di distanza.
+                            Chiamaci al numero <b>+010 496918</b> per fissare un appuntamento e parlare direttamente con il nostro staff esperto.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                            <button type="button" class="btn btn-success">Prenota</button>
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </section>
+            
+        </div>
         
     </main>
     
     <!-- FOOTER -->
-    <footer class="p-5">
-        <div class="row">
-            <div class="col offset-1">
-                LOGO
-            </div>
-            <div class="col offset-1">
-                <p>Home</p>
-                <p>Trattamenti</p>
-                <p>Contatti</p>
-            </div>
-            <div class="col offset-1">
-                <p>FAQ</p>
-                <p>Termini e condizioni</p>
-            </div>
-        </div>
-        
-        <div class="row footer-bottom text-center">
-            <div class="col">
-                <!-- Colonna vuota -->
-            </div>
-            <div class="col margin-tel-iva-copyright">
-                <p class="tel-iva">Tel: 010 7352879 &nbsp P.iva 12345678910</p>
-                <p class="copyright">© 2023 Site Bangerz, all rights reserved</p>
-            </div>
-            <div class="col offset-1">
-                <!-- Colonna vuota -->
-            </div>
-        </div>
-    </footer>
-    
-    <!-- <footer class="border d-flex justify-content-center">
-        <div>
-            LOGO
-        </div>
-        <div>
-            <p>Home</p>
-            <p>Trattamenti</p>
-            <p>Contatti</p>
-        </div>
-        <div>
-            <p>FAQ</p>
-            <p>Termini e condizioni</p>
-        </div>
-    </footer> -->
+    <div w3-include-html="./components/footer.html"></div> 
     
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
+    <!-- Includes W3C -->
+    <script>includeHTML();</script> 
 </body>
 </html>
