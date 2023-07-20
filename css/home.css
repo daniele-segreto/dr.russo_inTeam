@@ -162,6 +162,7 @@ textarea {
     border-radius: 4px;
     cursor: pointer;
 }
-.margine-bottone-small {
+.bottone-small {
     margin-top: -50px;
+    text-align: center;
 }
