@@ -9,7 +9,11 @@
     <!-- Google Font  - Medium 500-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--  code... inserire il Font da utilizare -->
-    
+    <!-- jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- CSS -->
@@ -28,17 +32,175 @@
     <main>
         <div class="linea"></div>
         
-        <h1 class="text-center m-5 p-5">TRATTAMENTI</h1>
-    </main>
-    
-    <!-- FOOTER -->
-    <div w3-include-html="./components/footer.html"></div> 
-    
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JavaScript -->
-    <script src="./js/script.js"></script>
-    <!-- Includes W3C -->
-    <script>includeHTML();</script> 
-</body>
-</html>
+        <!-- TITOLO PER SCHERMI GRANDU -->
+        <div class="big-titolo-trattamenti ms-2">
+            <h2 class="mt-5 mb-2">I nostri trattamenti</h2>
+            <p class="p">Scopri il trattamnto che fa al caso tuo</p>
+        </div>
+        
+        <!-- TITOLO PER SCHERMI PICCOLI -->
+        <div class="d-none small-titolo-trattamenti ms-4">
+            <h2 class="mt-5 mb-2">I nostri trattamenti</h2>
+            <p class="p">Scopri il trattamnto che fa al caso tuo</p>
+        </div>
+        
+        <!-- SCHEDE TRATTAMENTI PER DISPOSITIVI GRANDI -->
+        <section id="tabs" class="border border-0 mt-5 big-trattamenti">
+            <div>
+                <ul>
+                    <li><a href="#tabs-1">Rinoplastica</a></li>
+                    <li><a href="#tabs-2">Fillers</a></li>
+                    <li><a href="#tabs-3">Mastoplastica Additiva</a></li>
+                    <li><a href="#tabs-4">Matopessi</a></li>
+                    <li><a href="#tabs-5">Addominoplastica</a></li>
+                    <li><a href="#tabs-6">Liposcultura</a></li>
+                </ul>
+            </div>
+            <div id="tabs-1">
+                <div class="d-flex justify-content-center tabella-contenuto">
+                    <div>
+                        <img src="./img/RINOPLASTICA.png" alt="Rinoplastica" class="immagini">
+                    </div>
+                    <div class="testo">
+                        <h3>Rinoplastica</h3>
+                        <p class="mt-4">L’intervento di rinoplastica permette   la correzione chirurgica della forma, delle dimensioni e delle anomalie estetiche del naso tramite la modificazione delle sue strutture di sostegno (ossa nasali e cartilagini). L’obiettivo che si prefigge è renderlo regolare, proporzionato e in armonia con l’insieme del volto che migliorerà la sua fisionomia naturale senza alterarla. Si può infatti ridisegnarne il dorso (eliminando, ad esempio, la classica “gobba”) o la punta (modificandone l’aspetto “a patata” o “a becco”), oppure rimodellare entrambi.</p>
+                        <div class="d-flex justify-content-center">
+                            <button class="px-4 py-1">
+                                <a href="./contatti.html" class="btn btn-sm">Prenota una consulenza</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="d-flex justify-content-center tabella-contenuto">
+                    <div>
+                        <img src="./img/FILLER.png" alt="Fillers" class="immagini">
+                    </div>
+                    <div class="testo">
+                        <h3>Fillers</h3>
+                        <p class="mt-4">I fillers sono sostanze iniettabili nel derma o nel tessuto sottocutaneo utilizzate in medicina estetica sia per correggere imperfezioni dell’epidermide e inestetismi del volto (quali linee d’espressione e rughe naso-geniene, frontali, periorali, contorno occhi), sia per ripristinare, plasmare o aumentare il volume di alcune zone del viso (labbra, zigomi, mento, fronte).</p>
+                        <div class="d-flex justify-content-center">
+                            <button class="px-4 py-1">
+                                <a href="./contatti.html" class="btn btn-sm">Prenota una consulenza</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div class="d-flex justify-content-center tabella-contenuto">
+                    <div>
+                        <img src="./img/MASTOPLASTICA-ADDITIVA.png" alt="Mastoplastica additiva" class="immagini">
+                    </div>
+                    <div class="testo">
+                        <h3>Mastoplastica Additiva</h3>
+                        <p class="mt-4">La mastoplastica additiva è un intervento che permette di aumentare il volume del seno modificandone la forma e le dimensioni. È indicato in molteplici casi per: riequilibrare e rendere più armoniche le proporzioni della silhouette quando si ritiene il seno troppo piccolo o inadeguato per la propria fisicità; restituirgli pienezza e turgore quando appare svuotato dopo una gravidanza, l’allattamento o un dimagrimento importante; correggere un’asimmetria mammaria esteticamente sgradevole; ricostruirlo in seguito a un intervento demolitivo.</p>
+                        <div class="d-flex justify-content-center">
+                            <button class="px-4 py-1">
+                                <a href="./contatti.html" class="btn btn-sm">Prenota una consulenza</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <div class="d-flex justify-content-center tabella-contenuto">
+                    <div>
+                        <img src="./img/MASTOPESSI.png" alt="Mastopessi" class="immagini">
+                    </div>
+                    <div class="testo">
+                        <h3>Matopessi</h3>
+                        <p class="mt-4">La mastopessi, nota anche come “lifting del seno” è un intervento che permette di risollevare e rimodellare un décolleté cadente che ha perso turgore e appare “svuotato” (ptosi mammaria), restituendogli forma e definizione così da enfatizzare l’armonia della silhouette.</p>
+                        <div class="d-flex justify-content-center">
+                            <button class="px-4 py-1">
+                                <a href="./contatti.html" class="btn btn-sm">Prenota una consulenza</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-5">
+                <div class="d-flex justify-content-center tabella-contenuto">
+                    <div>
+                        <img src="./img/ADDOMINOPLASTICA.png" alt="Addominoplastica" class="immagini">
+                    </div>
+                    <div class="testo">
+                        <h3>Addominoplastica</h3>
+                        <p class="mt-4">L'addominoplastica è un intervento che permette di migliorare nettamente l’aspetto e i profili del corpo e di rimodellare l’addome. Consente infatti di rimuovere l’eccesso di cute e di adipe e di contrastare la lassità della muscolatura della parete addominale restituendole tono e definizione. </p>
+                        <div class="d-flex justify-content-center">
+                            <button class="px-4 py-1">
+                                <a href="./contatti.html" class="btn btn-sm">Prenota una consulenza</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-6">
+                <div class="d-flex justify-content-center tabella-contenuto">
+                    <div>
+                        <img src="./img/LIPOSCULTURA.png" alt="Liposcultura" class="immagini">
+                    </div>
+                    <div class="testo">
+                        <h3>Liposcultura</h3>
+                        <p class="mt-4">La liposcultura, conosciuta anche come liposuzione, è una procedura chirurgica di rimodellamento corporeo che permette di rimuovere accumuli adiposi indesiderati da aree specifiche (addome, fianchi, regione trocanterica, ginocchia, braccia) ridisegnando i profili della silhouette, riequilibrandone le proporzioni e restituendole armonia.</p>
+                        <div class="d-flex justify-content-center">
+                            <button class="px-4 py-1">
+                                <a href="./contatti.html" class="btn btn-sm">Prenota una consulenza</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SCHEDE PER DISPOSITIVI PICCOLI -->
+        <section class="d-none small-trattamenti">
+            <div class="px-4 py-2">
+                <img src="./img/RINOPLASTICA.png" alt="Rinoplastica" width="100%">
+                <h3 class="mt-4">Rinoplastica</h3>
+                <p class="mt-3">L’intervento di rinoplastica permette   la correzione chirurgica della forma, delle dimensioni e delle anomalie estetiche del naso tramite la modificazione delle sue strutture di sostegno (ossa nasali e cartilagini). L’obiettivo che si prefigge è renderlo regolare, proporzionato e in armonia con l’insieme del volto che migliorerà la sua fisionomia naturale senza alterarla. Si può infatti ridisegnarne il dorso (eliminando, ad esempio, la classica “gobba”) o la punta (modificandone l’aspetto “a patata” o “a becco”), oppure rimodellare entrambi.</p>
+                <hr>
+            </div>
+            <div class="px-4 py-2">
+                <img src="./img/FILLER.png" alt="Filler" width="100%">
+                <h3 class="mt-4">Fillers</h3>
+                <p class="mt-3">I fillers sono sostanze iniettabili nel derma o nel tessuto sottocutaneo utilizzate in medicina estetica sia per correggere imperfezioni dell’epidermide e inestetismi del volto (quali linee d’espressione e rughe naso-geniene, frontali, periorali, contorno occhi), sia per ripristinare, plasmare o aumentare il volume di alcune zone del viso (labbra, zigomi, mento, fronte).</p>
+                <hr>
+            </div>
+            <div class="px-4 py-2">
+                <img src="./img/MASTOPLASTICA-ADDITIVA.png" alt="Mastopessi additiva" width="100%">
+                <h3 class="mt-4">Mastoplastica Additiva</h3>
+                <p class="mt-3">La mastoplastica additiva è un intervento che permette di aumentare il volume del seno modificandone la forma e le dimensioni. È indicato in molteplici casi per: riequilibrare e rendere più armoniche le proporzioni della silhouette quando si ritiene il seno troppo piccolo o inadeguato per la propria fisicità; restituirgli pienezza e turgore quando appare svuotato dopo una gravidanza, l’allattamento o un dimagrimento importante; correggere un’asimmetria mammaria esteticamente sgradevole; ricostruirlo in seguito a un intervento demolitivo.</p>
+                <hr>
+            </div>
+            <div class="px-4 py-2">
+                <img src="./img/MASTOPESSI.png" alt="Mastopessi" width="100%">
+                <h3 class="mt-4">Matopessi</h3>
+                <p class="mt-3">La mastopessi, nota anche come “lifting del seno” è un intervento che permette di risollevare e rimodellare un décolleté cadente che ha perso turgore e appare “svuotato” (ptosi mammaria), restituendogli forma e definizione così da enfatizzare l’armonia della silhouette.
+                    <hr>
+                </div>
+                <div class="px-4 py-2">
+                    <img src="./img/ADDOMINOPLASTICA.png" alt="Addominoplastica" width="100%">
+                    <h3 class="mt-4">Addominoplastica</h3>
+                    <p class="mt-3">L'addominoplastica è un intervento che permette di migliorare nettamente l’aspetto e i profili del corpo e di rimodellare l’addome. Consente infatti di rimuovere l’eccesso di cute e di adipe e di contrastare la lassità della muscolatura della parete addominale restituendole tono e definizione. </p>
+                    <hr>
+                </div>
+                <div class="px-4 py-2">
+                    <img src="./img/LIPOSCULTURA.png" alt="Liposcultura" width="100%">
+                    <h3 class="mt-4">Liposcultura</h3>
+                    <p class="mt-3">La liposcultura, conosciuta anche come liposuzione, è una procedura chirurgica di rimodellamento corporeo che permette di rimuovere accumuli adiposi indesiderati da aree specifiche (addome, fianchi, regione trocanterica, ginocchia, braccia) ridisegnando i profili della silhouette, riequilibrandone le proporzioni e restituendole armonia.</p>
+                </div>
+            </section>
+            
+            <!-- FOOTER -->
+            <div w3-include-html="./components/footer.html"></div> 
+            
+            <!-- JS Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- JavaScript -->
+            <script src="./js/script.js"></script>
+            <!-- Includes W3C -->
+            <script>includeHTML();</script> 
+        </body>
+        </html>

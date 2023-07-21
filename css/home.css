@@ -71,7 +71,7 @@ p, .ul-p {
     color: #CDA434;
     font-size: 36px; 
 }
-.carrouse-container {
+.carousel-container {
     background-color: #232340;
 }
 /* Stile per centrare i bottoni al centro delle immagini */
@@ -165,4 +165,9 @@ textarea {
 .bottone-small {
     margin-top: -50px;
     text-align: center;
+    margin-top: -120px;
 }
+
+/* hr {
+    margin-top: -85px;
+} */

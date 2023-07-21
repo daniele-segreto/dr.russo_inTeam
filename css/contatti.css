@@ -28,3 +28,71 @@ main {
 h3 {
     color: #C9205B;
 }
+
+
+/* FORM */
+#pagina_contatti_container{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    margin: 0 80px;
+}
+#form_container{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    background-color: #232340;  
+    color:#F5F5F5;
+    padding: 80px 80px;  
+}
+
+#contatti_mappa_container{
+    flex:2;
+    padding: 80px 80px;
+}
+
+#form_container h2{
+    color: #CDA434;
+}
+
+label, input[type=text], select, textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+input[type=text], select, textarea {
+    padding: 10px;
+    border:none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+input[type=text]::placeholder, option::placeholder, option, textarea::placeholder{
+    color: #232340;
+}
+
+input[type=submit] {
+    background-color: #C9205B;
+    color: #F5F5F5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border: 2px solid #C9205B;
+    background-color: #f5f5f5;
+    color: #C9205B;
+}
+
+/* CONTENITORI */
+.form-a-sinistra {
+    margin-left: -10px;
+}
+
+.form-a-destra {
+    /* code... */
+}

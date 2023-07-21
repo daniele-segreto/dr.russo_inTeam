@@ -4,10 +4,10 @@ footer {
     color: #F5F5F5;
 }
 .footer-bottom {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .margin-tel-iva-copyright {
-    margin-left: 4px;
+    margin-left: 5px;
 }
 .tel-iva {
     color: #C9205B;
@@ -22,4 +22,7 @@ a {
 /* Iva (solo) per schermi piccoli */
 .iva {
     margin-top: -15px;
+}
+.logo-footer {
+    margin-top: -10px;
 }

@@ -26,3 +26,27 @@ function includeHTML() {
         }
     }
 }
+
+// TABLE TRATTAMENTI JQUERY
+$( function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+} );
+
+// FADE OUT SCHEDE
+$(document).ready(function() {
+    $("#tabs").tabs({
+        beforeActivate: function(event, ui) {
+            $(ui.oldPanel).fadeOut(300);
+        },
+        activate: function(event, ui) {
+            $(ui.newPanel).fadeIn(300);
+        }
+    });
+});
+
+// REDIRECT MODALE
+function apriPaginaContatti() {
+    // Reindirizza l'utente alla pagina "contatti.html"
+    window.location.href = "../contatti.html";
+}
