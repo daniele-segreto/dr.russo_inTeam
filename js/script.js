@@ -50,3 +50,25 @@ function apriPaginaContatti() {
     // Reindirizza l'utente alla pagina "contatti.html"
     window.location.href = "../contatti.html";
 }
+
+// BOTTON STICKY
+// let socialFloat = document.querySelector('#social-float');
+// let footer = document.querySelector('#footer');
+
+// function checkOffset() {
+//     function getRectTop(el){
+//         let rect = el.getBoundingClientRect();
+//         return rect.top;
+//     }
+    
+//     if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
+//     socialFloat.style.position = 'absolute';
+//     if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+//     socialFloat.style.position = 'fixed'; // restore when you scroll up
+    
+//     socialFloat.innerHTML = document.body.scrollTop + window.innerHeight;
+// }
+
+// document.addEventListener("scroll", function(){
+//     checkOffset();
+// });

@@ -5,6 +5,10 @@ nav {
 .nav-link {
     color: #232340;
 }
+.nav-link:hover {
+    color: #CDA434;
+    transition: 300ms;
+}
 .navbar-brand {
     margin-left: 35px;
 }

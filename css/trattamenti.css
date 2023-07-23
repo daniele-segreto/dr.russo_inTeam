@@ -38,6 +38,7 @@ main {
 }
 .tabella-contenuto {
     margin-left: -300px;
+    margin-right: -20px;
 }
 li {
     color: #f5f5f5 !important;

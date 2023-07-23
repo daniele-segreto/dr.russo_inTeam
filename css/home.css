@@ -112,7 +112,10 @@ p, .ul-p {
     color: #232340;
 }
 .recensioni-prev-icon, .recensioni-next-icon {
-    margin-top: 250px; 
+    margin-top: 200px; 
+}
+.recensioni-prev-icon {
+    margin-left: -32px;
 }
 .recensioni-next-icon {
     margin-right: 100px; 
@@ -161,6 +164,10 @@ textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 78px;
+    z-index: 2;
 }
 .bottone-small {
     margin-top: -50px;
